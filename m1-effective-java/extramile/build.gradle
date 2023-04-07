@@ -1,0 +1,5 @@
+apply plugin: 'me.champeau.jmh'
+
+jmh {
+    timeUnit = 'ms'
+}

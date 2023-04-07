@@ -1,0 +1,3 @@
+rootProject.name = 'java-mentoring-program'
+include 'm1-effective-java:main-task',
+        'm1-effective-java:extramile'
