@@ -1,0 +1,25 @@
+plugins {
+    id 'org.springframework.boot' version '2.7.5'
+}
+
+subprojects {
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+
+    dependencies {
+        annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+
+        testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    }
+    configurations.implementation {
+        exclude group: 'org.slf4j', module: 'slf4j-simple'
+    }
+
+    if (["grpc-client", "grpc-server"].contains(project.name)) {
+        tasks["jar"].enabled = false
+        tasks["bootJar"].enabled = true
+    }
+}
+
+tasks["jar"].enabled = false
+tasks["bootJar"].enabled = false
