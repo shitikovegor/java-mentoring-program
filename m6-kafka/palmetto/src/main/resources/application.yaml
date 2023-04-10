@@ -1,0 +1,40 @@
+application:
+  kafka:
+    producer:
+      topic: notifications
+    consumer:
+      topic: orders
+      threads-number: 3
+      max-tasks: 20
+      scheduler-ttl: 60
+spring:
+  main:
+    web-application-type: reactive
+  data:
+    mongodb:
+      database: palmetto-db
+      port: 27018
+      authentication-database: admin
+      username: root
+      password: password
+  kafka:
+    bootstrap-servers: localhost:29092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      retries: 2
+      acks: 1
+    consumer:
+      group-id: orders-palmetto-consumer
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring:
+          json:
+            value.default.type: com.jmp.kafka.palmetto.dto.OrderMessageDto
+            trusted.packages: com.jmp.kafka.*
+            use.type.headers: false
+
+server:
+  port: 8082

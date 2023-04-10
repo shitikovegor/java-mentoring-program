@@ -1,0 +1,100 @@
+version: "3.9"
+services:
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    container_name: zookeeper
+    ports:
+      - "22181:2181"
+    volumes:
+      - zookeeper-data:/var/lib/zookeeper/data
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+
+  kafka:
+    image: confluentinc/cp-kafka:latest
+    container_name: kafka
+    restart: unless-stopped
+    depends_on:
+      - zookeeper
+    ports:
+      - "29092:29092"
+    volumes:
+      - kafka-data:/var/lib/kafka/data
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      CONFLUENT_METRICS_REPORTER_BOOTSTRAP_SERVERS: kafka:29092
+      CONFLUENT_METRICS_REPORTER_TOPIC_REPLICAS: 1
+      CONFLUENT_METRICS_REPORTER_MAX_REQUEST_SIZE: 10485760
+      CONFLUENT_METRICS_REPORTER_TOPIC_CREATE: "false"
+  kafka-control-center:
+    image: confluentinc/cp-enterprise-control-center:latest
+    container_name: kafka-control-center
+    restart: unless-stopped
+    depends_on:
+      - kafka
+      - zookeeper
+    ports:
+      - "9021:9021"
+    environment:
+      CONTROL_CENTER_BOOTSTRAP_SERVERS: kafka:9092
+      CONTROL_CENTER_ZOOKEEPER_CONNECT: zookeeper:22181
+      CONTROL_CENTER_REPLICATION_FACTOR: 1
+      PORT: 9021
+  kafka-init-topics:
+    image: confluentinc/cp-kafka:latest
+    container_name: init-kafka
+    depends_on:
+      - kafka
+    entrypoint: [ '/bin/sh', '-c' ]
+    command: |
+      "    
+      kafka-topics --bootstrap-server kafka:9092 --list        
+      echo -e 'Creating kafka topics'    
+      kafka-topics --bootstrap-server kafka:9092 --create --if-not-exists --topic orders --replication-factor 1 --partitions 3    
+      kafka-topics --bootstrap-server kafka:9092 --create --if-not-exists --topic notifications --replication-factor 1 --partitions 3        
+      echo -e 'Successfully created the following topics:'    
+      kafka-topics --bootstrap-server kafka:9092 --list
+      "
+
+  client-mongo:
+    image: mongo:latest
+    container_name: client-db
+    ports:
+      - "27017:27017"
+    restart: unless-stopped
+    env_file:
+      - ./.env
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: $MONGO_USERNAME
+      MONGO_INITDB_ROOT_PASSWORD: $MONGO_PASSWORD
+    volumes:
+      - client-db:/data/db
+  palmetto-mongo:
+    image: mongo:latest
+    container_name: palmetto-db
+    ports:
+      - "27018:27017"
+    restart: unless-stopped
+    env_file:
+      - ./.env
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: $MONGO_USERNAME
+      MONGO_INITDB_ROOT_PASSWORD: $MONGO_PASSWORD
+    volumes:
+      - palmetto-db:/data/db
+
+volumes:
+  client-db:
+    driver: local
+  palmetto-db:
+    driver: local
+  kafka-data:
+    driver: local
+  zookeeper-data:
+    driver: local
