@@ -1,0 +1,44 @@
+application:
+  kafka:
+    producer:
+      topic: orders
+    consumer:
+      topic: notifications
+      threads-number: 3
+      max-tasks: 20
+      scheduler-ttl: 60
+  api:
+    palmetto-service:
+      baseUrl: http://localhost:8082
+
+spring:
+  main:
+    web-application-type: reactive
+  data:
+    mongodb:
+      database: client-db
+      port: 27017
+      authentication-database: admin
+      username: root
+      password: password
+  kafka:
+    bootstrap-servers: localhost:29092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      retries: 2
+      acks: 1
+    consumer:
+      group-id: notifications-client-consumer
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring:
+          json:
+            value.default.type: com.jmp.kafka.client.dto.NotificationMessageDto
+            trusted.packages: com.jmp.kafka.*
+            use.type.headers: false
+
+server:
+  port: 8081

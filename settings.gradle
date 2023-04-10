@@ -4,4 +4,10 @@ include 'm1-effective-java:main-task',
         'm2-advanced-multithreading',
         'm3-advanced-sql',
         'm4-search-engines',
-        'm5-elk-stack'
+        'm5-elk-stack',
+        'm6-kafka:client',
+        'm6-kafka:palmetto',
+        'm6-kafka:courier',
+        'm6-kafka:shared:api-clients:palmetto',
+        'm6-kafka:shared:kafka',
+        'm6-kafka:shared:exception-handling'
