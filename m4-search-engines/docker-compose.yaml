@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  books-solr:
+    container_name: books-solr
+    image: solr:latest
+    volumes:
+      - data:/var/solr
+    ports:
+      - "8983:8983"
+    command:
+      - solr-precreate
+      - books
+volumes:
+  data:
+    driver: local
+

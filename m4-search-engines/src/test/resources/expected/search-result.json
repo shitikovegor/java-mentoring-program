@@ -1,0 +1,22 @@
+{
+  "books": [
+    {
+      "id": "2a78c6dd-a2af-4e2e-aef8-53887c5d3d2e",
+      "title": "Test title",
+      "authors": [
+        "Surname, name"
+      ],
+      "content": "Content",
+      "language": "en"
+    }
+  ],
+  "facetsByField": {
+    "title": [
+      {
+        "value": "Test title",
+        "valueCount": 1
+      }
+    ]
+  },
+  "numFound": 1
+}
