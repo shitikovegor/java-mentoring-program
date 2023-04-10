@@ -1,0 +1,4 @@
+dependencies {
+    implementation project (':m1-effective-java:extramile')
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.1'
+}
