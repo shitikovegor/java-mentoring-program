@@ -1,0 +1,14 @@
+spring:
+  liquibase:
+    enabled: false
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5433/migration-flyway
+    username: postgres
+    password: dbPassword
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.PostgreSQL95Dialect
+
