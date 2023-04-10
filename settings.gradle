@@ -2,4 +2,5 @@ rootProject.name = 'java-mentoring-program'
 include 'm1-effective-java:main-task',
         'm1-effective-java:extramile',
         'm2-advanced-multithreading',
-        'm3-advanced-sql'
+        'm3-advanced-sql',
+        'm4-search-engines'

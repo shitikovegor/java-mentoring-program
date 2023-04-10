@@ -1,0 +1,17 @@
+spring:
+  data:
+    solr:
+      host: http://localhost:8983/solr
+
+books:
+  path: "C:/Users/Yahor_Shytsikau/books-epub/"
+  page-limit: 50
+  collection: "books"
+  suggest-field-loading-enabled: false
+  suggest-fields:
+    - "title"
+    - "authors"
+  suggester-name: "bookSuggester"
+
+server:
+  port: 8085

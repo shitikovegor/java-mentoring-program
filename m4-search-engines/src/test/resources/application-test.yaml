@@ -1,0 +1,14 @@
+spring:
+  data:
+    solr:
+      host: http://test-host:8080
+
+books:
+  path: "C:/Users/Yahor_Shytsikau/Projects/java-mentoring-program/m4-search-engines/build/resources/test/books"
+  page-limit: 50
+  collection: "books"
+  suggest-field-loading-enabled: false
+  suggest-fields:
+    - "title"
+    - "authors"
+  suggester-name: "bookSuggester"
