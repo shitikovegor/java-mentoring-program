@@ -1,0 +1,4 @@
+dependencies {
+    implementation project(':m10-grpc:grpc-proto')
+    implementation 'net.devh:grpc-spring-boot-starter:2.14.0.RELEASE'
+}
