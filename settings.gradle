@@ -11,4 +11,6 @@ include 'm1-effective-java:main-task',
         'm6-kafka:shared:api-clients:palmetto',
         'm6-kafka:shared:kafka',
         'm6-kafka:shared:exception-handling',
-        'm7-concurrency-multithreading'
+        'm7-concurrency-multithreading',
+        'm8-monitoring',
+        'm9-db-migration'

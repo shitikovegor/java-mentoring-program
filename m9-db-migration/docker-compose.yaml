@@ -1,0 +1,51 @@
+version: "3.9"
+services:
+  postgres-liquibase:
+    container_name: migration-liquibase
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: "migration-liquibase"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "dbPassword"
+      PGDATA: "/var/lib/postgresql/data/pgdata"
+    volumes:
+      - migration-liquibase:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - postgres
+  postgres-flyway:
+    container_name: migration-flyway
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: "migration-flyway"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "dbPassword"
+      PGDATA: "/var/lib/postgresql/data/pgdata"
+    volumes:
+      - migration-flyway:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+    networks:
+      - postgres
+  pgadmin:
+    container_name: pgadmin_container
+    image: dpage/pgadmin4:latest
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "email@email.com"
+      PGADMIN_DEFAULT_PASSWORD: "password"
+      PGADMIN_CONFIG_SERVER_MODE: "False"
+    volumes:
+      - ./pgadmin:/var/lib/pgadmin
+    ports:
+      - "5050:80"
+    networks:
+      - postgres
+volumes:
+  migration-liquibase:
+    driver: local
+  migration-flyway:
+    driver: local
+networks:
+  postgres:
+    driver: bridge
