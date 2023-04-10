@@ -1,0 +1,71 @@
+plugins {
+    id 'java'
+    id 'checkstyle'
+    id 'com.diffplug.spotless' version '6.7.2'
+    id 'me.champeau.jmh' version '0.6.8' apply false
+}
+
+group = 'com.jmp'
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'checkstyle'
+    apply plugin: 'com.diffplug.spotless'
+
+    repositories {
+        mavenCentral()
+    }
+
+    configurations {
+        compileOnly {
+            extendsFrom annotationProcessor
+        }
+    }
+
+    dependencies {
+        annotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+        implementation 'org.slf4j:slf4j-simple:1.7.35'
+        implementation 'org.slf4j:slf4j-api:1.7.35'
+
+        compileOnly 'org.projectlombok:lombok:1.18.24'
+
+        testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
+        testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+        testImplementation 'org.assertj:assertj-core:3.22.0'
+    }
+
+    checkstyle {
+        configFile = file("$rootDir/gradle/checkstyle/checkstyle.xml")
+        configDirectory.set(file("$rootDir/gradle/checkstyle"))
+        toolVersion = "10.3"
+    }
+
+    spotless {
+        format("misc") {
+            target("*.md", ".gitignore")
+        }
+        java {
+            removeUnusedImports()
+            importOrderFile("$rootDir/gradle/spotless/.importorder")
+            eclipse().configFile("$rootDir/gradle/spotless/formatter.xml")
+        }
+    }
+
+    tasks {
+        named('test') {
+            useJUnitPlatform()
+        }
+        withType(JavaCompile) {
+            dependsOn("spotlessApply")
+        }
+    }
+}
