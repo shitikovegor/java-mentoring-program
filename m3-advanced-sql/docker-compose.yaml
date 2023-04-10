@@ -1,0 +1,31 @@
+version: "3.9"
+services:
+  postgres:
+    container_name: m3-sql
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: "m3-sql"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "dbPassword"
+      PGDATA: "/var/lib/postgresql/data/pgdata"
+    volumes:
+      - m3-sql:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+  postgres-test:
+    container_name: m3-sql-test
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: "m3-sql-test"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "dbPassword"
+      PGDATA: "/var/lib/postgresql/data/pgdata"
+    volumes:
+      - m3-sql-test:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+volumes:
+  m3-sql:
+    driver: local
+  m3-sql-test:
+    driver: local
