@@ -1,0 +1,79 @@
+version: "3.9"
+services:
+  elasticsearch:
+    image: elastic/elasticsearch:8.6.1
+    container_name: elasticsearch
+    restart: always
+    environment:
+      - xpack.security.enabled=false
+      - discovery.type=single-node
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    cap_add:
+      - IPC_LOCK
+    volumes:
+      - elasticsearch-data-volume:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    networks:
+      - elk
+  kibana:
+    container_name: kibana
+    image: elastic/kibana:8.6.1
+    restart: always
+    environment:
+      SERVER_NAME: kibana
+      ELASTICSEARCH_HOSTS: http://elasticsearch:9200
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+    networks:
+      - elk
+  logstash:
+    container_name: logstash
+    image: elastic/logstash:8.6.1
+    restart: always
+    environment:
+      SERVER_NAME: logstash
+      ELASTICSEARCH_HOSTS: http://elasticsearch:9200
+    ports:
+      - "5044:5044"
+      - "5000:5000/tcp"
+    volumes:
+      - ./elk/logstash/pipelines.yaml:/usr/share/logstash/config/pipelines.yml:ro
+      - ./elk/logstash/pipelines:/usr/share/logstash/config/pipelines:ro
+    depends_on:
+      - kibana
+    networks:
+      - elk
+  filebeat:
+    container_name: filebeat
+    image: elastic/filebeat:8.6.1
+    restart: always
+    environment:
+      SERVER_NAME: filebeat
+      ELASTICSEARCH_HOSTS: http://elasticsearch:9200
+    ports:
+      - "5022:5022"
+    command: filebeat -e --strict.perms=false
+    volumes:
+      - ./elk/filebeat/filebeat.yaml:/usr/share/filebeat/filebeat.yml:ro
+      - ./logs:/var/docker/logs
+    depends_on:
+      - logstash
+    networks:
+      - elk
+volumes:
+  elasticsearch-data-volume:
+    driver: local
+networks:
+  elk:
+    name: elk
+

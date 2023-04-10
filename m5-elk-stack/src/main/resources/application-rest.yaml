@@ -1,0 +1,4 @@
+client:
+  hits-key: "hits"
+  count-key: "count"
+  source-key: "_source"

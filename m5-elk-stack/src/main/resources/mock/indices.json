@@ -1,0 +1,11 @@
+{
+  "events": {
+    "mappings": {
+      "properties": {
+        "title": {
+          "type": "text"
+        }
+      }
+    }
+  }
+}
