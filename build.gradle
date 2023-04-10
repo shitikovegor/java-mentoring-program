@@ -1,13 +1,11 @@
 plugins {
     id 'java'
     id 'checkstyle'
-    id 'com.diffplug.spotless' version '6.7.2'
+    id 'com.diffplug.spotless' version '6.13.0'
     id 'me.champeau.jmh' version '0.6.8' apply false
 }
 
 group = 'com.jmp'
-sourceCompatibility = JavaVersion.VERSION_17
-targetCompatibility = JavaVersion.VERSION_17
 
 allprojects {
     repositories {
@@ -19,6 +17,9 @@ subprojects {
     apply plugin: 'java'
     apply plugin: 'checkstyle'
     apply plugin: 'com.diffplug.spotless'
+
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 
     repositories {
         mavenCentral()

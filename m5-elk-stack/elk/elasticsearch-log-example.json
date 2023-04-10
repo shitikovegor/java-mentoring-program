@@ -1,0 +1,76 @@
+{
+  "took": 0,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 1,
+      "relation": "eq"
+    },
+    "max_score": 10.7974205,
+    "hits": [
+      {
+        "_index": "event-logs",
+        "_id": "EDsbBIYBc7j4fjeIcL5m",
+        "_score": 10.7974205,
+        "_ignored": [
+          "message.keyword",
+          "event.original.keyword"
+        ],
+        "_source": {
+          "app_version": "1.0.0",
+          "message": [
+            "00-00-40000 [42ac1236-a662-40ab-a5e9-2a91e18edfb5 app_name=event-service app_version=1.0.0 path=http://localhost:8086/api/v1/events/35172263-8b58-43fa-aab5-a12c3e6f60bd] 13656 ERROR com.jmp.elastic.service.EventService.lambda$getEvent$0: error - Event with id 35172263-8b58-43fa-aab5-a12c3e6f60bd not found",
+            "error - Event with id 35172263-8b58-43fa-aab5-a12c3e6f60bd not found"
+          ],
+          "app_description_map": "app_name=event-service app_version=1.0.0 path=http://localhost:8086/api/v1/events/35172263-8b58-43fa-aab5-a12c3e6f60bd",
+          "message_id": "00-00-40000",
+          "event": {
+            "original": "00-00-40000 [42ac1236-a662-40ab-a5e9-2a91e18edfb5 app_name=event-service app_version=1.0.0 path=http://localhost:8086/api/v1/events/35172263-8b58-43fa-aab5-a12c3e6f60bd] 13656 ERROR com.jmp.elastic.service.EventService.lambda$getEvent$0: error - Event with id 35172263-8b58-43fa-aab5-a12c3e6f60bd not found"
+          },
+          "author": "Yahor Shitsikau",
+          "request_id": "42ac1236-a662-40ab-a5e9-2a91e18edfb5",
+          "@version": "1",
+          "type": "filestream",
+          "host": {
+            "name": "b7b76e4f844d"
+          },
+          "tags": [
+            "beats_input_codec_plain_applied",
+            "failed"
+          ],
+          "message_type": "ERROR",
+          "pid": "13656",
+          "component_name": "com.jmp.elastic.service.EventService.lambda$getEvent$0",
+          "ecs": {
+            "version": "8.0.0"
+          },
+          "agent": {
+            "ephemeral_id": "2ab22396-c8cd-4431-9d09-80e845853117",
+            "name": "b7b76e4f844d",
+            "type": "filebeat",
+            "version": "8.6.1",
+            "id": "a8d3e601-5f15-4d25-ac21-c7a8a72dbae2"
+          },
+          "log": {
+            "file": {
+              "path": "/var/docker/logs/spring-boot-logger.log"
+            },
+            "offset": 26655
+          },
+          "input": {
+            "type": "filestream"
+          },
+          "app_name": "event-service",
+          "path": "http://localhost:8086/api/v1/events/35172263-8b58-43fa-aab5-a12c3e6f60bd",
+          "@timestamp": "2023-01-30T19:15:50.234Z"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+plugins {
+    id 'org.springframework.boot' version '2.7.5'
+}
+
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+dependencies {
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+    annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.2.Final'
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'co.elastic.clients:elasticsearch-java:8.6.0'
+    implementation 'jakarta.json:jakarta.json-api:2.0.1'
+    implementation 'org.mapstruct:mapstruct:1.5.2.Final'
+    implementation 'org.jsoup:jsoup:1.15.3'
+    implementation 'net.logstash.logback:logstash-logback-encoder:7.2'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+configurations.implementation {
+    exclude group: 'org.slf4j', module: 'slf4j-simple'
+}
+
+tasks["jar"].enabled = false
+tasks["bootJar"].enabled = true

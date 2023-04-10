@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: event-service
+    version: 1.0.0
+  elasticsearch:
+    uris:
+      - localhost:9200
+
+events:
+  indexName: "events"
+
+logger:
+  app-name-key: "app_name"
+  app-version-key: "app_version"
+  hostname-key: "hostname"
+  request-id-key: "request_id"
+
+server:
+  port: 8086

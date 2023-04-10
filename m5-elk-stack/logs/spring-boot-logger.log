@@ -1,0 +1,177 @@
+00-00-20000 [ ] 1684 INFO  o.h.validator.internal.util.Version.<clinit>: HV000001: Hibernate Validator 6.2.5.Final
+00-00-20000 [ ] 1684 INFO  c.j.elastic.EventServiceApplication.logStarting: Starting EventServiceApplication using Java 17.0.4.1 on EPBYMINW0CA2 with PID 1684 (C:\Users\Yahor_Shytsikau\Projects\java-mentoring-program\m5-elk-stack\build\classes\java\main started by Yahor_Shytsikau in C:\Users\Yahor_Shytsikau\Projects\java-mentoring-program)
+00-00-10000 [ ] 1684 DEBUG c.j.elastic.EventServiceApplication.logStarting: Running with Spring Boot v2.7.5, Spring v5.3.23
+00-00-20000 [ ] 1684 INFO  c.j.elastic.EventServiceApplication.logStartupProfileInfo: The following 1 profile is active: "rest"
+00-00-20000 [ ] 1684 INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize: Tomcat initialized with port(s): 8086 (http)
+00-00-20000 [ ] 1684 INFO  o.a.coyote.http11.Http11NioProtocol.log: Initializing ProtocolHandler ["http-nio-8086"]
+00-00-20000 [ ] 1684 INFO  o.a.catalina.core.StandardService.log: Starting service [Tomcat]
+00-00-20000 [ ] 1684 INFO  o.a.catalina.core.StandardEngine.log: Starting Servlet engine: [Apache Tomcat/9.0.68]
+00-00-20000 [ ] 1684 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log: Initializing Spring embedded WebApplicationContext
+00-00-20000 [ ] 1684 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext: Root WebApplicationContext: initialization completed in 2790 ms
+00-00-20000 [ ] 1684 INFO  o.a.coyote.http11.Http11NioProtocol.log: Starting ProtocolHandler ["http-nio-8086"]
+00-00-20000 [ ] 1684 INFO  o.s.b.w.e.tomcat.TomcatWebServer.start: Tomcat started on port(s): 8086 (http) with context path ''
+00-00-20000 [ ] 1684 INFO  c.j.elastic.EventServiceApplication.logStarted: Started EventServiceApplication in 6.613 seconds (JVM running for 8.155)
+00-00-20000 [ ] 1684 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log: Initializing Spring DispatcherServlet 'dispatcherServlet'
+00-00-20000 [ ] 1684 INFO  o.s.web.servlet.DispatcherServlet.initServletBean: Initializing Servlet 'dispatcherServlet'
+00-00-20000 [ ] 1684 INFO  o.s.web.servlet.DispatcherServlet.initServletBean: Completed initialization in 2 ms
+00-00-20000 [ ] 1964 INFO  o.h.validator.internal.util.Version.<clinit>: HV000001: Hibernate Validator 6.2.5.Final
+00-00-20000 [ ] 1964 INFO  c.j.elastic.EventServiceApplication.logStarting: Starting EventServiceApplication using Java 17.0.4.1 on EPBYMINW0CA2 with PID 1964 (C:\Users\Yahor_Shytsikau\Projects\java-mentoring-program\m5-elk-stack\build\classes\java\main started by Yahor_Shytsikau in C:\Users\Yahor_Shytsikau\Projects\java-mentoring-program)
+00-00-10000 [ ] 1964 DEBUG c.j.elastic.EventServiceApplication.logStarting: Running with Spring Boot v2.7.5, Spring v5.3.23
+00-00-20000 [ ] 1964 INFO  c.j.elastic.EventServiceApplication.logStartupProfileInfo: The following 1 profile is active: "rest"
+00-00-20000 [ ] 1964 INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize: Tomcat initialized with port(s): 8086 (http)
+00-00-20000 [ ] 1964 INFO  o.a.coyote.http11.Http11NioProtocol.log: Initializing ProtocolHandler ["http-nio-8086"]
+00-00-20000 [ ] 1964 INFO  o.a.catalina.core.StandardService.log: Starting service [Tomcat]
+00-00-20000 [ ] 1964 INFO  o.a.catalina.core.StandardEngine.log: Starting Servlet engine: [Apache Tomcat/9.0.68]
+00-00-20000 [ ] 1964 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log: Initializing Spring embedded WebApplicationContext
+00-00-20000 [ ] 1964 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext: Root WebApplicationContext: initialization completed in 2171 ms
+00-00-20000 [ ] 1964 INFO  o.a.coyote.http11.Http11NioProtocol.log: Starting ProtocolHandler ["http-nio-8086"]
+00-00-20000 [ ] 1964 INFO  o.s.b.w.e.tomcat.TomcatWebServer.start: Tomcat started on port(s): 8086 (http) with context path ''
+00-00-20000 [ ] 1964 INFO  c.j.elastic.EventServiceApplication.logStarted: Started EventServiceApplication in 4.432 seconds (JVM running for 5.467)
+00-00-20000 [ ] 1964 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log: Initializing Spring DispatcherServlet 'dispatcherServlet'
+00-00-20000 [ ] 1964 INFO  o.s.web.servlet.DispatcherServlet.initServletBean: Initializing Servlet 'dispatcherServlet'
+00-00-20000 [ ] 1964 INFO  o.s.web.servlet.DispatcherServlet.initServletBean: Completed initialization in 0 ms
+00-00-20000 [ ] 18728 INFO  o.h.validator.internal.util.Version.<clinit>: HV000001: Hibernate Validator 6.2.5.Final
+00-00-20000 [ ] 18728 INFO  c.j.elastic.EventServiceApplication.logStarting: Starting EventServiceApplication using Java 17.0.4.1 on EPBYMINW0CA2 with PID 18728 (C:\Users\Yahor_Shytsikau\Projects\java-mentoring-program\m5-elk-stack\build\classes\java\main started by Yahor_Shytsikau in C:\Users\Yahor_Shytsikau\Projects\java-mentoring-program)
+00-00-10000 [ ] 18728 DEBUG c.j.elastic.EventServiceApplication.logStarting: Running with Spring Boot v2.7.5, Spring v5.3.23
+00-00-20000 [ ] 18728 INFO  c.j.elastic.EventServiceApplication.logStartupProfileInfo: No active profile set, falling back to 1 default profile: "default"
+00-00-20000 [ ] 6460 INFO  o.h.validator.internal.util.Version.<clinit>: HV000001: Hibernate Validator 6.2.5.Final
+00-00-20000 [ ] 6460 INFO  c.j.elastic.EventServiceApplication.logStarting: Starting EventServiceApplication using Java 17.0.4.1 on EPBYMINW0CA2 with PID 6460 (C:\Users\Yahor_Shytsikau\Projects\java-mentoring-program\m5-elk-stack\build\classes\java\main started by Yahor_Shytsikau in C:\Users\Yahor_Shytsikau\Projects\java-mentoring-program)
+00-00-10000 [ ] 6460 DEBUG c.j.elastic.EventServiceApplication.logStarting: Running with Spring Boot v2.7.5, Spring v5.3.23
+00-00-20000 [ ] 6460 INFO  c.j.elastic.EventServiceApplication.logStartupProfileInfo: No active profile set, falling back to 1 default profile: "default"
+00-00-20000 [ ] 18728 INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize: Tomcat initialized with port(s): 8086 (http)
+00-00-20000 [ ] 18728 INFO  o.a.coyote.http11.Http11NioProtocol.log: Initializing ProtocolHandler ["http-nio-8086"]
+00-00-20000 [ ] 18728 INFO  o.a.catalina.core.StandardService.log: Starting service [Tomcat]
+00-00-20000 [ ] 18728 INFO  o.a.catalina.core.StandardEngine.log: Starting Servlet engine: [Apache Tomcat/9.0.68]
+00-00-20000 [ ] 18728 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log: Initializing Spring embedded WebApplicationContext
+00-00-20000 [ ] 18728 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext: Root WebApplicationContext: initialization completed in 2216 ms
+00-00-20000 [ ] 6460 INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize: Tomcat initialized with port(s): 8086 (http)
+00-00-20000 [ ] 6460 INFO  o.a.coyote.http11.Http11NioProtocol.log: Initializing ProtocolHandler ["http-nio-8086"]
+00-00-20000 [ ] 6460 INFO  o.a.catalina.core.StandardService.log: Starting service [Tomcat]
+00-00-20000 [ ] 6460 INFO  o.a.catalina.core.StandardEngine.log: Starting Servlet engine: [Apache Tomcat/9.0.68]
+00-00-20000 [ ] 18728 INFO  o.a.coyote.http11.Http11NioProtocol.log: Starting ProtocolHandler ["http-nio-8086"]
+00-00-20000 [ ] 18728 INFO  o.s.b.w.e.tomcat.TomcatWebServer.start: Tomcat started on port(s): 8086 (http) with context path ''
+00-00-20000 [ ] 18728 INFO  c.j.elastic.EventServiceApplication.logStarted: Started EventServiceApplication in 4.825 seconds (JVM running for 5.687)
+00-00-20000 [ ] 6460 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log: Initializing Spring embedded WebApplicationContext
+00-00-20000 [ ] 6460 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext: Root WebApplicationContext: initialization completed in 2431 ms
+00-00-20000 [ ] 6460 INFO  o.a.coyote.http11.Http11NioProtocol.log: Starting ProtocolHandler ["http-nio-8086"]
+00-00-30000 [ ] 6460 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8086 is already in use
+00-00-20000 [ ] 6460 INFO  o.a.coyote.http11.Http11NioProtocol.log: Pausing ProtocolHandler ["http-nio-8086"]
+00-00-20000 [ ] 6460 INFO  o.a.catalina.core.StandardService.log: Stopping service [Tomcat]
+00-00-20000 [ ] 6460 INFO  o.a.coyote.http11.Http11NioProtocol.log: Stopping ProtocolHandler ["http-nio-8086"]
+00-00-20000 [ ] 6460 INFO  o.a.coyote.http11.Http11NioProtocol.log: Destroying ProtocolHandler ["http-nio-8086"]
+00-00-20000 [ ] 6460 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+00-00-40000 [ ] 6460 ERROR o.s.b.d.LoggingFailureAnalysisReporter.report: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8086 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8086 or configure this application to listen on another port.
+
+00-00-20000 [ ] 18216 INFO  o.h.validator.internal.util.Version.<clinit>: HV000001: Hibernate Validator 6.2.5.Final
+00-00-20000 [ ] 18216 INFO  c.j.elastic.EventServiceApplication.logStarting: Starting EventServiceApplication using Java 17.0.4.1 on EPBYMINW0CA2 with PID 18216 (C:\Users\Yahor_Shytsikau\Projects\java-mentoring-program\m5-elk-stack\build\classes\java\main started by Yahor_Shytsikau in C:\Users\Yahor_Shytsikau\Projects\java-mentoring-program)
+00-00-10000 [ ] 18216 DEBUG c.j.elastic.EventServiceApplication.logStarting: Running with Spring Boot v2.7.5, Spring v5.3.23
+00-00-20000 [ ] 18216 INFO  c.j.elastic.EventServiceApplication.logStartupProfileInfo: No active profile set, falling back to 1 default profile: "default"
+00-00-20000 [ ] 18216 INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize: Tomcat initialized with port(s): 8086 (http)
+00-00-20000 [ ] 18216 INFO  o.a.coyote.http11.Http11NioProtocol.log: Initializing ProtocolHandler ["http-nio-8086"]
+00-00-20000 [ ] 18216 INFO  o.a.catalina.core.StandardService.log: Starting service [Tomcat]
+00-00-20000 [ ] 18216 INFO  o.a.catalina.core.StandardEngine.log: Starting Servlet engine: [Apache Tomcat/9.0.68]
+00-00-20000 [ ] 18216 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log: Initializing Spring embedded WebApplicationContext
+00-00-20000 [ ] 18216 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext: Root WebApplicationContext: initialization completed in 1635 ms
+00-00-20000 [ ] 18216 INFO  o.a.coyote.http11.Http11NioProtocol.log: Starting ProtocolHandler ["http-nio-8086"]
+00-00-20000 [ ] 18216 INFO  o.s.b.w.e.tomcat.TomcatWebServer.start: Tomcat started on port(s): 8086 (http) with context path ''
+00-00-20000 [ ] 18216 INFO  c.j.elastic.EventServiceApplication.logStarted: Started EventServiceApplication in 4.575 seconds (JVM running for 6.08)
+00-00-20000 [ ] 18216 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log: Initializing Spring DispatcherServlet 'dispatcherServlet'
+00-00-20000 [ ] 18216 INFO  o.s.web.servlet.DispatcherServlet.initServletBean: Initializing Servlet 'dispatcherServlet'
+00-00-20000 [ ] 18216 INFO  o.s.web.servlet.DispatcherServlet.initServletBean: Completed initialization in 2 ms
+00-00-20000 [ ] 7744 INFO  c.j.elastic.EventServiceApplication.logStarting: Starting EventServiceApplication using Java 17.0.4.1 on EPBYMINW0CA2 with PID 7744 (C:\Users\Yahor_Shytsikau\Projects\java-mentoring-program\m5-elk-stack\build\classes\java\main started by Yahor_Shytsikau in C:\Users\Yahor_Shytsikau\Projects\java-mentoring-program)
+00-00-10000 [ ] 7744 DEBUG c.j.elastic.EventServiceApplication.logStarting: Running with Spring Boot v2.7.5, Spring v5.3.23
+00-00-20000 [ ] 7744 INFO  o.h.validator.internal.util.Version.<clinit>: HV000001: Hibernate Validator 6.2.5.Final
+00-00-20000 [ ] 7744 INFO  c.j.elastic.EventServiceApplication.logStartupProfileInfo: The following 1 profile is active: "rest"
+00-00-20000 [ ] 7744 INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize: Tomcat initialized with port(s): 8086 (http)
+00-00-20000 [ ] 7744 INFO  o.a.coyote.http11.Http11NioProtocol.log: Initializing ProtocolHandler ["http-nio-8086"]
+00-00-20000 [ ] 7744 INFO  o.a.catalina.core.StandardService.log: Starting service [Tomcat]
+00-00-20000 [ ] 7744 INFO  o.a.catalina.core.StandardEngine.log: Starting Servlet engine: [Apache Tomcat/9.0.68]
+00-00-20000 [ ] 7744 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log: Initializing Spring embedded WebApplicationContext
+00-00-20000 [ ] 7744 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext: Root WebApplicationContext: initialization completed in 3175 ms
+00-00-20000 [ ] 7744 INFO  o.a.coyote.http11.Http11NioProtocol.log: Starting ProtocolHandler ["http-nio-8086"]
+00-00-20000 [ ] 7744 INFO  o.s.b.w.e.tomcat.TomcatWebServer.start: Tomcat started on port(s): 8086 (http) with context path ''
+00-00-20000 [ ] 7744 INFO  c.j.elastic.EventServiceApplication.logStarted: Started EventServiceApplication in 9.544 seconds (JVM running for 11.494)
+00-00-20000 [ ] 5176 INFO  o.h.validator.internal.util.Version.<clinit>: HV000001: Hibernate Validator 6.2.5.Final
+00-00-20000 [ ] 5176 INFO  c.j.elastic.EventServiceApplication.logStarting: Starting EventServiceApplication using Java 17.0.4.1 on EPBYMINW0CA2 with PID 5176 (C:\Users\Yahor_Shytsikau\Projects\java-mentoring-program\m5-elk-stack\build\classes\java\main started by Yahor_Shytsikau in C:\Users\Yahor_Shytsikau\Projects\java-mentoring-program)
+00-00-10000 [ ] 5176 DEBUG c.j.elastic.EventServiceApplication.logStarting: Running with Spring Boot v2.7.5, Spring v5.3.23
+00-00-20000 [ ] 5176 INFO  c.j.elastic.EventServiceApplication.logStartupProfileInfo: The following 1 profile is active: "rest"
+00-00-20000 [ ] 5176 INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize: Tomcat initialized with port(s): 8086 (http)
+00-00-20000 [ ] 5176 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext: Root WebApplicationContext: initialization completed in 3253 ms
+00-00-20000 [ ] 5176 INFO  o.s.b.w.e.tomcat.TomcatWebServer.start: Tomcat started on port(s): 8086 (http) with context path ''
+00-00-20000 [ ] 5176 INFO  c.j.elastic.EventServiceApplication.logStarted: Started EventServiceApplication in 5.111 seconds (JVM running for 7.744)
+00-00-20000 [ ] 25076 INFO  o.h.validator.internal.util.Version.<clinit>: HV000001: Hibernate Validator 6.2.5.Final
+00-00-20000 [ ] 25076 INFO  c.j.elastic.EventServiceApplication.logStarting: Starting EventServiceApplication using Java 17.0.4.1 on EPBYMINW0CA2 with PID 25076 (C:\Users\Yahor_Shytsikau\Projects\java-mentoring-program\m5-elk-stack\build\classes\java\main started by Yahor_Shytsikau in C:\Users\Yahor_Shytsikau\Projects\java-mentoring-program)
+00-00-10000 [ ] 25076 DEBUG c.j.elastic.EventServiceApplication.logStarting: Running with Spring Boot v2.7.5, Spring v5.3.23
+00-00-20000 [ ] 25076 INFO  c.j.elastic.EventServiceApplication.logStartupProfileInfo: The following 1 profile is active: "rest"
+00-00-20000 [ ] 25076 INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize: Tomcat initialized with port(s): 8086 (http)
+00-00-20000 [ ] 25076 INFO  o.a.coyote.http11.Http11NioProtocol.log: Initializing ProtocolHandler ["http-nio-8086"]
+00-00-20000 [ ] 25076 INFO  o.a.catalina.core.StandardService.log: Starting service [Tomcat]
+00-00-20000 [ ] 25076 INFO  o.a.catalina.core.StandardEngine.log: Starting Servlet engine: [Apache Tomcat/9.0.68]
+00-00-20000 [ ] 25076 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log: Initializing Spring embedded WebApplicationContext
+00-00-20000 [ ] 25076 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext: Root WebApplicationContext: initialization completed in 1343 ms
+00-00-20000 [ ] 25076 INFO  o.a.coyote.http11.Http11NioProtocol.log: Starting ProtocolHandler ["http-nio-8086"]
+00-00-20000 [ ] 25076 INFO  o.s.b.w.e.tomcat.TomcatWebServer.start: Tomcat started on port(s): 8086 (http) with context path ''
+00-00-20000 [ ] 25076 INFO  c.j.elastic.EventServiceApplication.logStarted: Started EventServiceApplication in 3.236 seconds (JVM running for 5.528)
+00-00-20000 [ ] 4828 INFO  c.j.elastic.EventServiceApplication.logStarting: Starting EventServiceApplication using Java 17.0.4.1 on EPBYMINW0CA2 with PID 4828 (C:\Users\Yahor_Shytsikau\Projects\java-mentoring-program\m5-elk-stack\build\classes\java\main started by Yahor_Shytsikau in C:\Users\Yahor_Shytsikau\Projects\java-mentoring-program)
+00-00-20000 [ ] 4828 INFO  o.h.validator.internal.util.Version.<clinit>: HV000001: Hibernate Validator 6.2.5.Final
+00-00-10000 [ ] 4828 DEBUG c.j.elastic.EventServiceApplication.logStarting: Running with Spring Boot v2.7.5, Spring v5.3.23
+00-00-20000 [ ] 4828 INFO  c.j.elastic.EventServiceApplication.logStartupProfileInfo: The following 1 profile is active: "rest"
+00-00-20000 [ ] 4828 INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize: Tomcat initialized with port(s): 8086 (http)
+00-00-20000 [ ] 4828 INFO  o.a.coyote.http11.Http11NioProtocol.log: Initializing ProtocolHandler ["http-nio-8086"]
+00-00-20000 [ ] 4828 INFO  o.a.catalina.core.StandardService.log: Starting service [Tomcat]
+00-00-20000 [ ] 4828 INFO  o.a.catalina.core.StandardEngine.log: Starting Servlet engine: [Apache Tomcat/9.0.68]
+00-00-20000 [ ] 4828 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log: Initializing Spring embedded WebApplicationContext
+00-00-20000 [ ] 4828 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext: Root WebApplicationContext: initialization completed in 1365 ms
+00-00-20000 [ ] 4828 INFO  o.a.coyote.http11.Http11NioProtocol.log: Starting ProtocolHandler ["http-nio-8086"]
+00-00-20000 [ ] 4828 INFO  o.s.b.w.e.tomcat.TomcatWebServer.start: Tomcat started on port(s): 8086 (http) with context path ''
+00-00-20000 [ ] 4828 INFO  c.j.elastic.EventServiceApplication.logStarted: Started EventServiceApplication in 3.095 seconds (JVM running for 4.085)
+00-00-20000 [ ] 4828 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log: Initializing Spring DispatcherServlet 'dispatcherServlet'
+00-00-20000 [ ] 4828 INFO  o.s.web.servlet.DispatcherServlet.initServletBean: Initializing Servlet 'dispatcherServlet'
+00-00-20000 [ ] 4828 INFO  o.s.web.servlet.DispatcherServlet.initServletBean: Completed initialization in 1 ms
+00-00-20000 [ ] 12236 INFO  o.h.validator.internal.util.Version.<clinit>: HV000001: Hibernate Validator 6.2.5.Final
+00-00-20000 [ ] 12236 INFO  c.j.elastic.EventServiceApplication.logStarting: Starting EventServiceApplication using Java 17.0.4.1 on EPBYMINW0CA2 with PID 12236 (C:\Users\Yahor_Shytsikau\Projects\java-mentoring-program\m5-elk-stack\build\classes\java\main started by Yahor_Shytsikau in C:\Users\Yahor_Shytsikau\Projects\java-mentoring-program)
+00-00-10000 [ ] 12236 DEBUG c.j.elastic.EventServiceApplication.logStarting: Running with Spring Boot v2.7.5, Spring v5.3.23
+00-00-20000 [ ] 12236 INFO  c.j.elastic.EventServiceApplication.logStartupProfileInfo: The following 1 profile is active: "rest"
+00-00-20000 [ ] 12236 INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize: Tomcat initialized with port(s): 8086 (http)
+00-00-20000 [ ] 12236 INFO  o.a.coyote.http11.Http11NioProtocol.log: Initializing ProtocolHandler ["http-nio-8086"]
+00-00-20000 [ ] 12236 INFO  o.a.catalina.core.StandardService.log: Starting service [Tomcat]
+00-00-20000 [ ] 12236 INFO  o.a.catalina.core.StandardEngine.log: Starting Servlet engine: [Apache Tomcat/9.0.68]
+00-00-20000 [ ] 12236 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log: Initializing Spring embedded WebApplicationContext
+00-00-20000 [ ] 12236 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext: Root WebApplicationContext: initialization completed in 2314 ms
+00-00-20000 [ ] 12236 INFO  o.a.coyote.http11.Http11NioProtocol.log: Starting ProtocolHandler ["http-nio-8086"]
+00-00-20000 [ ] 12236 INFO  o.s.b.w.e.tomcat.TomcatWebServer.start: Tomcat started on port(s): 8086 (http) with context path ''
+00-00-20000 [ ] 12236 INFO  c.j.elastic.EventServiceApplication.logStarted: Started EventServiceApplication in 5.743 seconds (JVM running for 8.162)
+00-00-20000 [ ] 12236 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log: Initializing Spring DispatcherServlet 'dispatcherServlet'
+00-00-20000 [ ] 12236 INFO  o.s.web.servlet.DispatcherServlet.initServletBean: Initializing Servlet 'dispatcherServlet'
+00-00-20000 [ ] 12236 INFO  o.s.web.servlet.DispatcherServlet.initServletBean: Completed initialization in 0 ms
+00-00-20000 [ ] 27552 INFO  o.h.validator.internal.util.Version.<clinit>: HV000001: Hibernate Validator 6.2.5.Final
+00-00-20000 [ ] 27552 INFO  c.j.elastic.EventServiceApplication.logStarting: Starting EventServiceApplication using Java 17.0.4.1 on EPBYMINW0CA2 with PID 27552 (C:\Users\Yahor_Shytsikau\Projects\java-mentoring-program\m5-elk-stack\build\classes\java\main started by Yahor_Shytsikau in C:\Users\Yahor_Shytsikau\Projects\java-mentoring-program)
+00-00-10000 [ ] 27552 DEBUG c.j.elastic.EventServiceApplication.logStarting: Running with Spring Boot v2.7.5, Spring v5.3.23
+00-00-20000 [ ] 27552 INFO  c.j.elastic.EventServiceApplication.logStartupProfileInfo: The following 1 profile is active: "rest"
+00-00-20000 [ ] 27552 INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize: Tomcat initialized with port(s): 8086 (http)
+00-00-20000 [ ] 27552 INFO  o.a.coyote.http11.Http11NioProtocol.log: Initializing ProtocolHandler ["http-nio-8086"]
+00-00-20000 [ ] 27552 INFO  o.a.catalina.core.StandardService.log: Starting service [Tomcat]
+00-00-20000 [ ] 27552 INFO  o.a.catalina.core.StandardEngine.log: Starting Servlet engine: [Apache Tomcat/9.0.68]
+00-00-20000 [ ] 27552 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log: Initializing Spring embedded WebApplicationContext
+00-00-20000 [ ] 27552 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext: Root WebApplicationContext: initialization completed in 2011 ms
+00-00-20000 [ ] 27552 INFO  o.a.coyote.http11.Http11NioProtocol.log: Starting ProtocolHandler ["http-nio-8086"]
+00-00-20000 [ ] 27552 INFO  o.s.b.w.e.tomcat.TomcatWebServer.start: Tomcat started on port(s): 8086 (http) with context path ''
+00-00-20000 [ ] 27552 INFO  c.j.elastic.EventServiceApplication.logStarted: Started EventServiceApplication in 4.509 seconds (JVM running for 5.785)
+00-00-20000 [ ] 27552 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log: Initializing Spring DispatcherServlet 'dispatcherServlet'
+00-00-20000 [ ] 27552 INFO  o.s.web.servlet.DispatcherServlet.initServletBean: Initializing Servlet 'dispatcherServlet'
+00-00-20000 [ ] 27552 INFO  o.s.web.servlet.DispatcherServlet.initServletBean: Completed initialization in 37 ms
+00-00-40000 [1e064b5d-9e98-4c57-9ed5-c49fbb1de0ed app_name=event-service app_version=1.0.0 path=http://localhost:8086/api/v1/events/35172263-8b58-43fa-aab5-a12c3e6f60bd] 27552 ERROR com.jmp.elastic.service.EventService.checkIfEventExists: Event with id 35172263-8b58-43fa-aab5-a12c3e6f60bd not found

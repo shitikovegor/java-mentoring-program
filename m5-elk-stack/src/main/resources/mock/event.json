@@ -1,0 +1,13 @@
+{
+  "id": "f1b7a2e8-f96b-4eb3-9007-c726b820b98d",
+  "title": "From middle to senior",
+  "eventType": "tech-talk",
+  "eventDate": "2023-01-22T16:00:00Z",
+  "place": "EPAM k3",
+  "description": "How to grow to senior",
+  "subTopics": [
+    "teamwork",
+    "hard-skills",
+    "soft-skills"
+  ]
+}

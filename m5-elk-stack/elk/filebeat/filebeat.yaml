@@ -1,0 +1,26 @@
+filebeat.inputs:
+    - type: filestream
+      id: event-service-logs
+      enabled: true
+      paths:
+        - /var/docker/logs/*.log
+      scan_frequency: 5s
+      encoding: utf-8
+      exclude_files: [ '\.gz$' ]
+      json:
+        add_error_key: true
+        keys_under_root: true
+        overwrite_keys: true
+output.logstash:
+  hosts: ["logstash:5000"]
+  protocol: "tcp"
+setup.kibana:
+  host: "http://kibana:5601"
+filebeat.autodiscover:
+  providers:
+    - type: docker
+      hints.enabled: true
+
+#filebeat.config.modules:
+#  enabled: true
+#  path: ${path.config}/modules.d/*.yml
