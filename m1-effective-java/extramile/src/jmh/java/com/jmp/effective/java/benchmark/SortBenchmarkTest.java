@@ -1,6 +1,5 @@
 package com.jmp.effective.java.benchmark;
 
-import java.util.Comparator;
 import java.util.Random;
 
 import org.openjdk.jmh.annotations.Benchmark;
@@ -38,7 +37,6 @@ public class SortBenchmarkTest {
                     .ints()
                     .limit(arraySize)
                     .boxed()
-                    .sorted(Comparator.comparing(Integer::intValue))
                     .mapToInt(Integer::intValue)
                     .toArray();
         }
